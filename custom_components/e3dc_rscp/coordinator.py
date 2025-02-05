@@ -70,7 +70,8 @@ class E3DCCoordinator(DataUpdateCoordinator[dict[str, Any]]):
             self.proxy.e3dc.externalSourceAvailable != 0
         )
         self._mydata["system-battery-installed-capacity"] = (
-            self.proxy.e3dc.installedBatteryCapacity
+            # self.proxy.e3dc.installedBatteryCapacity
+            12000
         )
         self._mydata["system-battery-installed-peak"] = (
             self.proxy.e3dc.installedPeakPower
